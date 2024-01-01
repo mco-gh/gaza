@@ -2,7 +2,9 @@ import datetime
 import sys
 
 e = datetime.datetime.now()
-print(f"processed data at {e}\n\n")
+print(f"<h1>processed data at {e}</h1>")
 
+print("<pre>")
 for line in sys.stdin:
-  print(line + "\n")
+  print(line)
+print("</pre>")
